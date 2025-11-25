@@ -1,0 +1,19 @@
+body {
+    background: #e8e8e8;
+}
+
+.container {
+    padding: 20px;
+    width: 1280px;
+    margin: 0 auto;
+}
+
+@media (prefers-color-scheme: dark) {
+    * {
+        color: #fff;
+    }
+
+    body {
+        background: #252525;
+    }
+}

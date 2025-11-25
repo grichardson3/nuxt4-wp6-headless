@@ -2,10 +2,18 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  modules: ['@wpnuxt/core'],
+  modules: [
+    '@wpnuxt/core',
+    '@nuxtjs/tailwindcss'
+  ],
   wpNuxt: {
       wordpressUrl: 'http://localhost/wordpress_sixeightthree',
       // frontendUrl: 'http://localhost:3000'
       // wordpressUrl: 'https://wordpress.wpnuxt.com'
-  }
+  },
+  css: [
+    "../assets/styles/main.scss",
+    "../assets/styles/fonts.scss",
+    "../assets/styles/posts.scss"
+  ]
 })

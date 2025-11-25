@@ -6,7 +6,7 @@
     const { data: settings } = await useAsyncData('settings', () => useWPGeneralSettings())
 
     useHead({
-        title: settings.value?.data?.title.rendered
+        title: settings.value?.data?.title
     });
 
 </script>
